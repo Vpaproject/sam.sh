@@ -1,4 +1,8 @@
 #!/bin/bash
+# Script Auto Installer by samrey steven
+# www.indoworx.com
+# initialisasi var
+OS=`uname -p`;
 
 yum update -y
 
@@ -217,37 +221,6 @@ chmod +x /usr/bin/bmon
 # auto kill multi login
 #echo "while :" >> /usr/bin/autokill
 #echo "  do" >> /usr/bin/autokill
-#echo "  userlimit $llimit" >> /usr/bin/autokill
-#echo "  sleep 20" >> /usr/bin/autokill
-#echo "  done" >> /usr/bin/autokill
-
-# download script cd wget 
-https://raw.githubusercontent.com/aliya02/rania/master/installcode.sh 
-chmod +x installcode.sh 
-bash installcode.sh 
-clear
-# downlaod script
-cd /usr/bin
-wget -O speedtest.py "script.fawzya.net/centos/speedtest.py"
-wget -O userlog "script.fawzya.net/centos/user-login.sh"
-wget -O userexpire "script.fawzya.net/centos/auto-expire.sh"
-wget -O usernew "script.fawzya.net/centos/create-user.sh"
-wget -O userlist "script.fawzya.net/centos/daftar-user.sh" 
-wget -O trial "script.fawzya.net/centos/trial.sh"
-wget -O hapus "script.fawzya.net/centos/hapus.sh"
-echo "cat log-install.txt" | tee tutorial
-echo "speedtest.py --share" | tee speedtest
-# sett permission
-chmod +x userlog
-chmod +x userexpire
-chmod +x usernew
-chmod +x userlist
-chmod +x trial
-chmod +x hapus
-chmod +x tutorial
-chmod +x speedtest
-chmod +x speedtest.py
-clear
 
 
 # cron
